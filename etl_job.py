@@ -13,7 +13,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-# Example ETL transformation
+# Example ETL transformation test
 source_df = spark.read.csv("s3://dpk-glue-bucket/input/employees.csv")
 transformed_df = source_df.select("column1", "column2")
 transformed_df.write.parquet("s3://dpk-glue-bucket/output/")
