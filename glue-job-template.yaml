@@ -33,5 +33,5 @@ Resources:
       ExecutionProperty:
         MaxConcurrentRuns: 1
       MaxRetries: 0
-      Name: MyGlueJob
+      Name: DPKGlueJob
       Role: !GetAtt GlueRole.Arn
