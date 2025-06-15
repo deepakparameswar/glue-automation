@@ -1,7 +1,3 @@
-Parameters:
-  ScriptLocation:
-    Type: String
-    Description: S3 location of the Glue script
 
 Resources:
   GlueRole:
@@ -31,7 +27,7 @@ Resources:
     Properties:
       Command:
         Name: glueetl-dpk
-        ScriptLocation: s3://dpk-glue-bucket/scripts/job-6.py
+        ScriptLocation: s3://dpk-glue-bucket/scripts/job-7.py
       DefaultArguments:
         "--job-language": "python"
       ExecutionProperty:
